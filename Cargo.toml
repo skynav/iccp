@@ -1,0 +1,29 @@
+[package]
+# essential fields
+name = "iccp"
+version = "0.0.1"
+edition = "2021"
+# additional fields (in alphabetic order)
+authors = ["Glenn Adams <glenn@skynav.com>"]
+categories = ["network-programming"]
+description = """
+iccp is a library that implements the Telecontrol Application Service Element (TASE.2)
+protocol, also known as the Inter-Control Centre Protocol (ICCP), as defined by IEC 60870-6-503:2014;
+not yet ready for download - placeholder for work in progress
+"""
+documentation = "https://github.com/skynav/iccp"
+homepage = "https://github.com/skynav/iccp"
+keywords = ["iccp"]
+license = "Unlicense OR MIT"
+readme = "README.md"
+repository = "https://github.com/skynav/iccp"
+
+[lib]
+path = "crates/core/lib.rs"
+
+[workspace]
+members = [
+  "crates/iccp-pm"
+]
+
+[dependencies]
